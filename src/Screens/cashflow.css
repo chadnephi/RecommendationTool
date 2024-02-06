@@ -1,0 +1,31 @@
+/* .cashflow{
+    display: flex;
+    align-items: row;
+    justify-content: center ;
+} */
+
+button{
+    margin: 0px 10px;
+    background-color: #303030;
+    border-radius: 10px;
+    color: white;
+    padding: 7px;
+}
+
+button:hover{
+    background-color: #6f6f6f;
+    cursor: pointer;
+}
+
+ul{
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* .no{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+    margin: auto;
+} */
