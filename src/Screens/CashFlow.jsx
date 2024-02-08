@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./cashflow.css";
@@ -33,12 +34,9 @@ const CashFlow = () => {
 
   return (
     <div className="cashflow">
-      <div>
         <h3>Are they saving money?</h3>
         <button onClick={saving}>Yes</button>
         <button onClick={notSaving}>No</button>
-      </div>
-      <div>
         {showMoney && (
           <div>
             <p>Great!</p>
@@ -60,7 +58,6 @@ const CashFlow = () => {
             </button>
           </div>
         )}
-      </div>
       {savings && (
         <div>
           <h3>Is the 10% for Long Term?</h3>
@@ -114,7 +111,7 @@ const CashFlow = () => {
           </ul>
           <h4>
             Looking at what they are doing, how does it fit into the 4 Corner
-            Stones?{" "}
+            Stones?
           </h4>
           <p>Is there a corner stone that they are missing?</p>
           <p>Is there a more effective way to fulfill a cornerstone?</p>

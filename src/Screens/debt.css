@@ -1,29 +1,74 @@
+.debt {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 100px;
+}
+
+.half {
+  width: 50%;
+  padding: 0% 5%;
+}
+
+.inline {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
 .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: row;
-  }
+  position: relative;
+}
 
 .additional-info {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 200px;
-    z-index: 9999;
-  }
-  
-  .info-button:hover + .additional-info {
-    display: flex;
-    justify-content: center;
-    
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  z-index: 9999;
 }
-.secureButtons{
-    display: flex;
-    justify-content: center;
-  }
+.additional {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 5%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 450px;
+  z-index: 9999;
+}
+
+.info-button:hover + .additional-info {
+  display: flex;
+  justify-content: center;
+}
+.info-button:hover + .additional {
+  display: flex;
+  justify-content: center;
+}
+.secureButtons {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  border: 3px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.halfsies {
+  display: flex;
+}
+
+.yess {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

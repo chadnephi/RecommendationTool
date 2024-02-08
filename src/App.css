@@ -6,3 +6,32 @@ a {
   text-decoration: none;
   color: azure;
 }
+button {
+  margin: 5px 10px;
+  background-color: #303030;
+  border-radius: 10px;
+  color: white;
+  padding: 7px;
+}
+
+button:hover {
+  background-color: #6f6f6f;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+li {
+  gap: 30px;
+  margin: 5px 0;
+}
+
+ol {
+  display: inline-block;
+  text-align: start;
+  margin: 0px;
+  padding-left: 25px;
+}

@@ -1,42 +1,4 @@
-/* .cashflow{
-    display: flex;
-    align-items: row;
-    justify-content: center ;
-} */
-
-button{
-    margin: 5px 10px;
-    background-color: #303030;
-    border-radius: 10px;
-    color: white;
-    padding: 7px;
+.cashflow {
+  position: relative;
+  top: 100px;
 }
-
-button:hover{
-    background-color: #6f6f6f;
-    cursor: pointer;
-}
-
-ul{
-    display:flex;
-    justify-content: center;
-    gap: 30px;
-}
-li{
-    /* display:flex; */
-    /* justify-content: center; */
-    /* align-items: row; */
-    gap: 30px;
-    margin: 5px 0;
-}
-
-ol{
-    display: inline-block;
-    text-align: start;
-}
-/* .no{
-    display: flex;
-    justify-content: space-evenly;
-    width: 25%;
-    margin: auto;
-} */
