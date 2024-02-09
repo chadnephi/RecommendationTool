@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import CashFlow from "./Screens/CashFlow";
 import Debt from "./Screens/Debt";
 import EmergencyFund from "./Screens/EmergencyFund";
+import Insurances from "./Screens/Insurances";
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
         <Route path="/CashFlow" element={<CashFlow/>}/>
         <Route path="/Debt" element={<Debt/>}/>
         <Route path="/EmergencyFund" element={<EmergencyFund/>}/>
+        <Route path="/Insurances" element={<Insurances/>}/>
       </Routes>
 
     </div>

@@ -1,0 +1,17 @@
+.insurance {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+  }
+
+  .thirds{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .thirdsies{
+    width: 33vw;
+    flex-wrap: wrap;
+  }
