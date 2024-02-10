@@ -117,7 +117,7 @@ const Insurances = () => {
               <div>
                 <h4>Options:</h4>
                 <ol>
-                  <li>Bundled with other insurnaces</li>
+                  <li>Bundled with other insurances</li>
                   <li>My friend helped me get it</li>
                 </ol>
               </div>

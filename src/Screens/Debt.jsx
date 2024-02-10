@@ -322,6 +322,7 @@ const Debt = () => {
                 credit in the next year and half
               </li>
             </ul>
+              <h3 style={{ border: "3px dotted black", padding: "10px 0px" }}>Try next idea</h3>
           </div>
         )}
         {debtCon && (
