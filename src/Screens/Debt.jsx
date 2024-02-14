@@ -83,32 +83,55 @@ const Debt = () => {
                 </p>
               </div>
             </div>
+            {secure && (
+              <div>
+                <ul>
+                  <li>Home / Real estate</li>
+                  <li>Car / Vehicles </li>
+                  <li>Home Equity Lines of Credit (HELOC)</li>
+                  <li>401K Loan / other investment loans</li>
+                </ul>
+              </div>
+            )}
+            {unsecure && (
+              <div>
+                <ul>
+                  <li>Credit cards </li>
+                  <li>Personal loans</li>
+                  <li>Student Loans </li>
+                  <li>Medical Loans</li>
+                </ul>
+              </div>
+            )}
+            <div>
+              <h3>What to do next:</h3>
+              <ol>
+                <li>Make a list comprising EACH of their debts</li>
+                <li>Gather the total balance for EACH debt</li>
+                <li>
+                  Gather the interest rate for EACH debt (if possible, often
+                  with credit cards they only have a rough idea)
+                </li>
+                <li>Gather the payment for each debt</li>
+                <li>
+                  Once that is done, create the projections for each debt and
+                  look for ideas to eliminate it faster:
+                </li>
+              </ol>
+              <Link
+                to="https://www.bankrate.com/finance/credit-cards/credit-card-payoff-calculator/"
+                target="_blank"
+                style={{ color: "black", textDecorationLine: "underline" }}
+              >
+                BankRate Calculator
+              </Link>
+            </div>
           </div>
         )}
         {noDebt && (
           <h4>
             Great! Skip this section of recommendations (why are you here?)
           </h4>
-        )}
-        {secure && (
-          <div>
-            <ul>
-              <li>Home / Real estate</li>
-              <li>Car / Vehicles </li>
-              <li>Home Equity Lines of Credit (HELOC)</li>
-              <li>401K Loan / other investment loans</li>
-            </ul>
-          </div>
-        )}
-        {unsecure && (
-          <div>
-            <ul>
-              <li>Credit cards </li>
-              <li>Personal loans</li>
-              <li>Student Loans </li>
-              <li>Medical Loans</li>
-            </ul>
-          </div>
         )}
       </div>
       {/* ************************************************************** */}
@@ -322,7 +345,9 @@ const Debt = () => {
                 credit in the next year and half
               </li>
             </ul>
-              <h3 style={{ border: "3px dotted black", padding: "10px 0px" }}>Try next idea</h3>
+            <h3 style={{ border: "3px dotted black", padding: "10px 0px" }}>
+              Try next idea
+            </h3>
           </div>
         )}
         {debtCon && (
