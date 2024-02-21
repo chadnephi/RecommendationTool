@@ -147,7 +147,7 @@ const Insurances = () => {
             </li>
           )}
         </div>
-        <div className="thirdsies">
+        <div className="thirdsies" id="ltc">
           <button onClick={long2}>Long Term Care:</button>
           {long && (
             <div>

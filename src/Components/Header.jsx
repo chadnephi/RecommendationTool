@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <h1>
-        <Link to="/CashFlow" className="link">Cash Flow</Link>
+        <Link to="/CashFlow">Cash Flow</Link>
       </h1>
       <h1>
         <Link to="/Debt">Debt</Link>
@@ -21,7 +21,7 @@ const Header = () => {
         <Link to="/Investments">Investments</Link>
       </h1>
       <h1>
-        <Link to="/Wealth&Preservation">Wealth & Preservation</Link>
+        <Link to="/Wealth&EstatePreservation">Wealth & Estate Preservation</Link>
       </h1>
       <h1>
         <Link to="/MidTermGoals">Mid Term Goals</Link>

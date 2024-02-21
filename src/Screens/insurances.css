@@ -1,20 +1,23 @@
 .insurance {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    top: 100px;
-    margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+  margin-bottom: 200px;
+}
 
-  }
+.thirds {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-  .thirds{
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .thirdsies{
-    width: 33vw;
-    flex-wrap: wrap;
-    padding: 0 5px;
-  }
+.thirdsies {
+  width: 33vw;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+#ltc {
+  border-left: 1.5px solid rgb(65, 79, 159);
+  border-right: 1.5px solid rgb(65, 79, 159);
+}

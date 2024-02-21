@@ -8,6 +8,7 @@ const Wealth = () => {
   const [noWealth, setNoWealth] = useState(false);
   const [both, setBoth] = useState(false);
   const [will, setWill] = useState(false);
+  const [free, setFree] = useState(false);
   const [trust, setTrust] = useState(false);
   const [myKids, setMyKids] = useState(false);
   const [noThink, setNoThink] = useState(false);
@@ -17,6 +18,7 @@ const Wealth = () => {
   const noWealth2 = () => setNoWealth(!noWealth);
   const both2 = () => setBoth(!both);
   const will2 = () => setWill(!will);
+  const free2 = () => setFree(!free);
   const trust2 = () => setTrust(!trust);
   const myKids2 = () => setMyKids(!myKids);
   const noThink2 = () => setNoThink(!noThink);
@@ -63,19 +65,19 @@ const Wealth = () => {
             The 10 most important reasons to have a will
           </Link>
           <h4>Options to get one:</h4>
-          <div className="noWill">
-            <ul>
-              <li>
-                <Link
-                  to="https://www.freewill.com/partner/wfg"
-                  target="_blank"
-                  style={{ color: "black", textDecorationLine: "underline" }}
-                >
-                  Free Nationwide Will
-                </Link>
-              </li>
-              <li>Use a will via Everest</li>
-              <ul>
+          <button>
+            <Link
+              to="https://www.freewill.com/partner/wfg"
+              target="_blank"
+              style={{ textDecorationLine: "underline" }}
+            >
+              Free Nationwide Will
+            </Link>
+          </button>
+          <button onClick={free2}>Use a will via Everest</button>
+          {free && (
+            <div className="free2">
+              <ul className="free">
                 <li>
                   If they have a Transamerican FFIUL over $250K then they get
                   this for free.
@@ -85,8 +87,8 @@ const Wealth = () => {
                   insurance and the will would be part of it.
                 </li>
               </ul>
-            </ul>
-          </div>
+            </div>
+          )}
         </div>
       )}
       {trust && (
@@ -138,7 +140,7 @@ const Wealth = () => {
                 </li>
               )}
             </div>
-            <div className="thirdss">
+            <div className="thirdss" id="think">
               <button onClick={noThink2}>Don't think that they can </button>
               {noThink && (
                 <li>
