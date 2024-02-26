@@ -612,8 +612,8 @@ const Insurances = () => {
                         </li>
                       </ul>
                     </div>
-                    <p>If this is the choice here are your options for Term:</p>
-                    <div className="perm">
+                    <h4>If this is the choice here are your options for Term:</h4>
+                    <div className="term">
                       <p>When using a term the key things to note are:</p>
                       <ul>
                         <li>
