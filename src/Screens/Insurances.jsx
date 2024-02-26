@@ -32,6 +32,24 @@ const Insurances = () => {
   const [understand, setUnderstand] = useState(false);
   const [knowLtc, setKnowLtc] = useState(false);
   const [selfInsured, setSelfInsured] = useState(false);
+  const [enough, setEnough] = useState(false);
+  const [enough1, setEnough1] = useState(false);
+  const [notEnough, setNotEnough] = useState(false);
+  const [cover, setCover] = useState(false);
+  const [options, setOptions] = useState(false);
+  const [otherOptions, setOtherOptions] = useState(false);
+  const [options1, setOptions1] = useState(false);
+  const [retire, setRetire] = useState(false);
+  const [final, setFinal] = useState(false);
+  const [leave, setLeave] = useState(false);
+  const [permanent, setPermanent] = useState(false);
+  const [terminate, setTerminate] = useState(false);
+  const [indexLife, setIndexLife] = useState(false);
+  const [finalEx, setFinalEx] = useState(false);
+  const [wholeLife, setWholeLife] = useState(false);
+  const [lb, setLb] = useState(false);
+  const [trendsetter, setTrendsetter] = useState(false);
+  const [crump, setCrump] = useState(false);
 
   const health2 = () => setHealth(!health);
   const yesHealth2 = () => setYesHealth(!yesHealth);
@@ -61,6 +79,28 @@ const Insurances = () => {
   const understand2 = () => setUnderstand(!understand);
   const knowLtc2 = () => setKnowLtc(!knowLtc);
   const selfInsured2 = () => setSelfInsured(!selfInsured);
+  const enough2 = () => setEnough(!enough);
+  const enough3 = () => setEnough1(!enough1);
+  const notEnough2 = () => setNotEnough(!notEnough);
+  const cover2 = () => setCover(!cover);
+  const options2 = () => setOptions(!options);
+  const otherOptions2 = () => setOtherOptions(!otherOptions);
+  const options3 = () => setOptions1(!options1);
+  const retire2 = () => setRetire(!retire);
+  const final2 = () => setFinal(!final);
+  const leave2 = () => setLeave(!leave);
+  const permanent2 = () => setPermanent(!permanent);
+  const terminate2 = () => setTerminate(!terminate);
+  const indexLife2 = () => setIndexLife(!indexLife);
+  const finalEx2 = () => setFinalEx(!finalEx);
+  const wholeLife2 = () => setWholeLife(!wholeLife);
+  const lb2 = () => setLb(!lb);
+  const trendsetter2 = () => setTrendsetter(!trendsetter);
+  const crump2 = () => setCrump(!crump);
+
+  const both = () => enough2() + perm2();
+  const both2 = () => options3() + options2();
+  const both3 = () => options3() + otherOptions2();
 
   return (
     <div className="insurance">
@@ -195,10 +235,13 @@ const Insurances = () => {
             </div>
           )}
           {need && (
-            <p>
-              Insurable Need: 10x annual income, total debts, final expenses,
-              and leave an immediate emergency fund
-            </p>
+            <div>
+              <p>
+                Insurable Need: 10x annual income, total debts, final expenses,
+                and leave an immediate emergency fund
+              </p>
+              <p>Use the WFG FNA program to find it</p>
+            </div>
           )}
           {yesLife && (
             <div>
@@ -220,12 +263,12 @@ const Insurances = () => {
                 </ol>
               </div>
               <button onClick={term2}>Term</button>
-              <button onClick={perm2}>Perm</button>
+              <button onClick={both}>Perm</button>
             </div>
           )}
           {term && (
             <h4>
-              <ul style={{flexDirection:"column", textAlign:"start"}}>
+              <ul style={{ flexDirection: "column", textAlign: "start" }}>
                 <li>Whats the face amount?</li>
                 <li>How much is the premium?</li>
                 <li>What year did it start?</li>
@@ -235,7 +278,7 @@ const Insurances = () => {
           )}
           {perm && (
             <h4>
-              <ul style={{flexDirection:"column", textAlign:"start"}}>
+              <ul style={{ flexDirection: "column", textAlign: "start" }}>
                 <li>What kind is it?</li>
                 <li>Whats the face amount?</li>
                 <li>How much is the premium?</li>
@@ -322,7 +365,7 @@ const Insurances = () => {
                     <p>
                       Insurance companies are legally bound by the contract to
                       pay out. Very few things (such as sucidie, illegal
-                      activities, etc), change that.{" "}
+                      activities, etc), change that.
                     </p>
                   )}
                 </li>
@@ -392,7 +435,7 @@ const Insurances = () => {
                         of mind, this gives you a chance to talk about long term
                         benefits such as:
                       </p>
-                      <ul style={{flexDirection:"column"}}>
+                      <ul style={{ flexDirection: "column" }}>
                         <li>Leaving behind a family legacy</li>
                         <li>
                           Living benefits (such as LTC, chronic, critical, &
@@ -418,6 +461,211 @@ const Insurances = () => {
           )}
         </div>
       </div>
+      {enough && (
+        <div className="enough">
+          <h3>Is it enough coverage?</h3>
+          <button onClick={enough3}>Yes</button>
+          <button onClick={notEnough2}>No</button>
+          {enough1 && (
+            <div>
+              <p>Great!</p>
+              <h3>Will it cover them from now until their retirement?</h3>
+              <button onClick={cover2}>Yes</button>
+              <button onClick={notEnough2}>No</button>
+              {cover && (
+                <div>
+                  <p>Great!</p>
+                  <h3>Do they want it for anything after Retirement?</h3>
+                  <button onClick={both2}>Yes</button>
+                  <button onClick={both3}>No</button>
+                  {options && (
+                    <div>
+                      <p>Options:</p>
+                    </div>
+                  )}
+                  {otherOptions && (
+                    <div>
+                      <p>Could it help them with something after Retirement?</p>
+                      <p>
+                        You're job is to determine if there's a need they don't
+                        know about (from options below) and then teach them.
+                      </p>
+                      <p>Options Below:</p>
+                    </div>
+                  )}
+                </div>
+              )}
+              {options1 && (
+                <div>
+                  <button onClick={retire2}>Retirement (itself)</button>
+                  <button onClick={final2}>Final Expenses</button>
+                  <button onClick={leave2}>Leave behind a legacy</button>
+                </div>
+              )}
+              {retire && <p>Look at an IUL</p>}
+              {final && (
+                <p>
+                  Usual recommendation is to look at Everest Final Expense
+                  coverage
+                </p>
+              )}
+              {leave && (
+                <p>
+                  Whole life (Transamerica has a great option, but you can also
+                  check with Crump to see other carriers and options)
+                </p>
+              )}
+            </div>
+          )}
+          {notEnough && (
+            <div>
+              <p>Options:</p>
+              <button onClick={permanent2}>Perm</button>
+              <button onClick={terminate2}>Term</button>
+              <div className="pts">
+                {permanent && (
+                  <div className="pt">
+                    <h3>Perm</h3>
+                    <div className="perm">
+                      <h4>Use if:</h4>
+                      <ul>
+                        <li>They need tax free money for retirement</li>
+                        <li>They want money for final expenses</li>
+                        <li>They don't want it to expire</li>
+                        <li>They want guarenteed premiums</li>
+                      </ul>
+                    </div>
+                    <div className="perm">
+                      <h4>Don't use if:</h4>
+                      <ul>
+                        <li>They are super paycheck to paycheck</li>
+                        <li>
+                          They are hardcore "buy term, invest the difference"
+                        </li>
+                        <li>
+                          They really only need life insurance for a short term
+                          need (coverage while wrapping up working years,
+                          coverage to cover a debt, coverage while kids are
+                          still dependants, etc).
+                        </li>
+                      </ul>
+                    </div>
+                    <p>If this is the choice here are your options:</p>
+                    <div className="choice1">
+                      <button onClick={indexLife2}>Index Universal Life</button>
+                      <button onClick={finalEx2}>Final Expenses</button>
+                      <button onClick={wholeLife2}>Whole Life</button>
+                    </div>
+                    {indexLife && (
+                      <div>
+                        <p>
+                          Great options to generate cash value safely and tax
+                          free
+                        </p>
+                        <p>
+                          Options: Look at Investment Page for Transamerica,
+                          Nationwide, and Pacific Life. Other Crump Options also
+                          available.
+                        </p>
+                      </div>
+                    )}
+                    {finalEx && (
+                      <p>
+                        Leave behind $5K to $50K to cover funeral and other
+                        final expenses
+                      </p>
+                    )}
+                    {wholeLife && (
+                      <p>
+                        Not concerned with the cash value, but wants to leave
+                        behind more than $50K as an inheritance to kids / family
+                      </p>
+                    )}
+                  </div>
+                )}
+                {terminate && (
+                  <div className="pt">
+                    <h3>Term</h3>
+                    <div className="perm">
+                      <h4>Use if:</h4>
+                      <ul>
+                        <li>Need most affordable insurance</li>
+                        <li>They want coverage for a specific need</li>
+                        <li>
+                          They are ok with it expiring and not getting anything
+                          else from it
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="perm">
+                      <h4>Don't use if:</h4>
+                      <ul>
+                        <li>
+                          If they need money for retirement and want a tax
+                          advantaged option
+                        </li>
+                        <li>They do not want the coverage to end</li>
+                        <li>
+                          They are not ok with the coverage ending and
+                          potentially becoming uninsurable or too costly to
+                          renew
+                        </li>
+                      </ul>
+                    </div>
+                    <p>If this is the choice here are your options for Term:</p>
+                    <div className="perm">
+                      <p>When using a term the key things to note are:</p>
+                      <ul>
+                        <li>
+                          Does it provide enough coverage for what they want?
+                        </li>
+                        <li>Is it the most cost effective?</li>
+                        <li>
+                          Does it cover them timewise as long as they need it
+                          to?
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <button onClick={lb2}>Transamerica LB</button>
+                      <button onClick={trendsetter2}>
+                        Transamerica Trendsetter
+                      </button>
+                      <button onClick={crump2}>
+                        Options from running a Crump analysis
+                      </button>
+                    </div>
+                    {lb && (
+                      <p>
+                        Higher cost, but comes with Living Benefits on a term
+                        insurance
+                      </p>
+                    )}
+                    {trendsetter && (
+                      <p>One of the very most cost effective options</p>
+                    )}
+                    {crump && (
+                      <span>
+                        To know how to do this, watch{" "}
+                        <Link
+                          to="https://drive.google.com/drive/folders/1io8usDBoQ5cu4PMJrWTjE62W7h3lXOdw"
+                          target="_blank"
+                          style={{
+                            color: "black",
+                            textDecorationLine: "underline",
+                          }}
+                        >
+                          Crump Training
+                        </Link>
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 };
