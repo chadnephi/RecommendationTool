@@ -6,3 +6,12 @@
     top: 100px;
     margin-bottom: 200px;
   }
+
+  .half {
+    width: 50vw;
+    margin: auto
+  }
+
+  .h{
+    width: 50vw;
+  }

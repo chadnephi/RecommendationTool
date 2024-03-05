@@ -50,3 +50,8 @@ ol {
   margin: 0px;
   padding-left: 25px;
 }
+
+.row {
+  display: flex;
+  justify-content: center;
+}
