@@ -11,6 +11,8 @@ const YesInvest = () => {
   const [month, setMonth] = useState(false);
   const [allTheWay, setAllTheWay] = useState(false);
   const [theyDont, setTheyDont] = useState(false);
+  const [think, setThink] = useState(false);
+  const [balance, setBalance] = useState(false);
 
   const kind2 = () => setKind(!kind);
   const long2 = () => setLong(!long);
@@ -18,6 +20,8 @@ const YesInvest = () => {
   const month2 = () => setMonth(!month);
   const allTheWay2 = () => setAllTheWay(!allTheWay);
   const theyDont2 = () => setTheyDont(!theyDont);
+  const think2 = () => setThink(!think);
+  const balance2 = () => setBalance(!balance);
 
   return (
     <div className="yesInvest">
@@ -64,10 +68,12 @@ const YesInvest = () => {
           )}
         </li>
         <li>
-          <button>What do they think of it?</button>
+          <button onClick={think2}>What do they think of it?</button>
+          {think && <p>...</p>}
         </li>
         <li>
-          <button>What is the current balance?</button>
+          <button onClick={balance2}>What is the current balance?</button>
+          {balance && <p>$...</p>}
         </li>
       </ol>
       <button onClick={month2}>How much do they put towards it a month?</button>
