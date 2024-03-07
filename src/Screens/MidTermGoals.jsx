@@ -63,7 +63,7 @@ const MidTermGoals = () => {
             <button className="info-button" onClick={account2}>
               529 Account
             </button>
-            <p className="additional-info">
+            <p className="additionals">
               A 529 plan is a tax-advantaged savings plan designed to encourage
               saving for future education costs. These plans, named after
               Section 529 of the Internal Revenue Code, are sponsored by states,
@@ -76,7 +76,7 @@ const MidTermGoals = () => {
             <button className="info-button" onClick={education2}>
               Education Savings Acct
             </button>
-            <p className="additional-info">
+            <p className="additionals">
               Education Savings Accounts (ESAs), also known as Coverdell
               Education Savings Accounts (CESAs), are tax-advantaged savings
               accounts designed to help families save for qualified education

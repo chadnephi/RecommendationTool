@@ -45,12 +45,28 @@
   width: 450px;
   z-index: 9999;
 }
+.additionals {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 5%;
+  background-color: #dedede;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 450px;
+  z-index: 9999;
+}
 
 .info-button:hover + .additional-info {
   display: flex;
   justify-content: center;
 }
 .info-button:hover + .additional {
+  display: flex;
+  justify-content: center;
+}
+.info-button:hover + .additionals {
   display: flex;
   justify-content: center;
 }

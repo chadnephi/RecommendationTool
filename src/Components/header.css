@@ -9,7 +9,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   padding: 10px;
-  z-index: 9999;
+  z-index: 11;
 }
 
 h1 {

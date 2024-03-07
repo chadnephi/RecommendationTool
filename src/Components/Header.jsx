@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./header.css"
+import "./header.css";
 
 const Header = () => {
+
   return (
     <header>
       <h1>
@@ -21,7 +22,9 @@ const Header = () => {
         <Link to="/Investments">Investments</Link>
       </h1>
       <h1>
-        <Link to="/Wealth&EstatePreservation">Wealth & Estate Preservation</Link>
+        <Link to="/Wealth&EstatePreservation">
+          Wealth & Estate Preservation
+        </Link>
       </h1>
       <h1>
         <Link to="/MidTermGoals">Mid Term Goals</Link>
@@ -30,4 +33,4 @@ const Header = () => {
   );
 };
 
-export default Header
+export default Header;
