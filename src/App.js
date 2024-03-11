@@ -62,6 +62,7 @@ function App() {
           path="/MidTermGoals"
           element={isAuthorized ? <MidTermGoals /> : <Navigate to="/auth" />}
         />
+        <Route path="*" element={<Navigate to='/auth'/>}/>
       </Routes>
       <Footer />
     </div>

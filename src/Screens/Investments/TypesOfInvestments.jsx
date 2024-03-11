@@ -36,6 +36,7 @@ const TypesOfInvestments = ({ min }) => {
           <table>
             <tr className="columns">
               <th>About</th>
+              <td>Typically comprised of stocks / bonds/ MF</td>
               <th>Growth</th>
               <th>Safety</th>
               <th>Tax Advantage</th>
@@ -43,19 +44,14 @@ const TypesOfInvestments = ({ min }) => {
               <th>Liquidity</th>
               <th>Rollover</th>
               <th>How to run basic numbers</th>
-              <th>Pros</th>
-              <th>Cons</th>
             </tr>
             <tr className="columns">
-              <td>Typically comprised of stocks / bonds/ MF</td>
               <td>Typically 4-6%</td>
               <td>Not if in stocks / bonds / mutual funds</td>
-              <td>Yes</td>
+              <td>Yes - Tax deferred growth and tax free withdrawals</td>
               <td>Not really, not meant for EF</td>
               <td>After age: 59 1/2</td>
               <td>Anytime</td>
-              <td>...</td>
-              <td>...</td>
               <td>...</td>
             </tr>
           </table>
@@ -340,7 +336,6 @@ const TypesOfInvestments = ({ min }) => {
               have high returns while usually providing downside protection.
             </p>
           </div>
-          <h3></h3>
           <table>
             <tr className="columns">
               <th>Growth</th>

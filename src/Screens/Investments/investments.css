@@ -18,7 +18,7 @@
   flex-direction: row;
   max-width: 100vw;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-wrap: wrap;
   position: absolute;
   background-color: rgba(154, 170, 184, 0.75);

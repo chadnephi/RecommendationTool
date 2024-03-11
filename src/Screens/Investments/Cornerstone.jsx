@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useTable } from "react-table";
+import React from "react";
 import "./investments.css";
 
 const Cornerstone = () => {

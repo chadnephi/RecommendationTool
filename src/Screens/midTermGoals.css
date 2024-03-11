@@ -1,12 +1,22 @@
 .midTerm {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    top: 100px;
-    margin-bottom: 200px;
-  }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+  margin-bottom: 200px;
+}
 
-  .h{
-    width: 50vw;
-  }
+.h {
+  margin: auto;
+  width: 50vw;
+}
+
+.half ol {
+  display: flex;
+  flex-direction: column;
+}
+.h ol {
+  display: flex;
+  flex-direction: column;
+}
