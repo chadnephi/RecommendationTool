@@ -88,7 +88,7 @@ const CashFlow = () => {
           <p style={{ fontWeight: "bold" }}>Work with us?</p>
           <p>Are there leaks in the expenses that they can cut out?</p>
           <li>Goal is to increase income!</li>
-          <li>If the IRS raised taxes 10% this year, what would you do? You would complain and moan and pay 10% in taxes. You need to treat saving 10% the same way</li>
+          <li>If the IRS raised taxes 10% this year, what would you do? You would complain and moan and pay 10% more in taxes. You need to treat saving 10% the same way</li>
         </div>
       )}
       {otherGoals && (

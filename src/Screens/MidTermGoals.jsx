@@ -481,11 +481,19 @@ const MidTermGoals = () => {
               {taxBen && (
                 <div className="halfsies">
                   <p className="half">
-                    <span style={{ fontWeight: "bold" }}>529 Plans:</span> Contributions are made with after-tax dollars, but earnings grow tax-deferred, and withdrawals for qualified education expenses are tax-free at the federal level. Some states offer tax deductions or credits for contributions to their 529 plans.
+                    <span style={{ fontWeight: "bold" }}>529 Plans:</span>{" "}
+                    Contributions are made with after-tax dollars, but earnings
+                    grow tax-deferred, and withdrawals for qualified education
+                    expenses are tax-free at the federal level. Some states
+                    offer tax deductions or credits for contributions to their
+                    529 plans.
                   </p>
                   <p className="half">
                     <span style={{ fontWeight: "bold" }}>ESAs:</span>{" "}
-                    Contributions are made with after-tax dollars, and earnings grow tax-free. Withdrawals for qualified education expenses are also tax-free at the federal level. However, unlike 529 plans, there are no state tax benefits associated with ESAs.
+                    Contributions are made with after-tax dollars, and earnings
+                    grow tax-free. Withdrawals for qualified education expenses
+                    are also tax-free at the federal level. However, unlike 529
+                    plans, there are no state tax benefits associated with ESAs.
                   </p>
                 </div>
               )}
@@ -495,11 +503,17 @@ const MidTermGoals = () => {
               {aveFunds && (
                 <div className="halfsies">
                   <p className="half">
-                    <span style={{ fontWeight: "bold" }}>529 Plans:</span> Funds can be used for qualified education expenses at eligible institutions nationwide, including colleges, universities, vocational schools, and even some K-12 expenses.
+                    <span style={{ fontWeight: "bold" }}>529 Plans:</span> Funds
+                    can be used for qualified education expenses at eligible
+                    institutions nationwide, including colleges, universities,
+                    vocational schools, and even some K-12 expenses.
                   </p>
                   <p className="half">
-                    <span style={{ fontWeight: "bold" }}>ESAs:</span>{" "}
-                    Funds can be used for qualified education expenses from kindergarten through 12th grade, as well as for higher education expenses. Qualified expenses include tuition, fees, books, supplies, equipment, and certain educational services.
+                    <span style={{ fontWeight: "bold" }}>ESAs:</span> Funds can
+                    be used for qualified education expenses from kindergarten
+                    through 12th grade, as well as for higher education
+                    expenses. Qualified expenses include tuition, fees, books,
+                    supplies, equipment, and certain educational services.
                   </p>
                 </div>
               )}
@@ -509,11 +523,19 @@ const MidTermGoals = () => {
               {aveInvestments && (
                 <div className="halfsies">
                   <p className="half">
-                    <span style={{ fontWeight: "bold" }}>529 Plans:</span> Typically offer a range of investment options, such as mutual funds, ETFs, and age-based portfolios. The investment options vary by plan and may be managed by different financial institutions.
+                    <span style={{ fontWeight: "bold" }}>529 Plans:</span>{" "}
+                    Typically offer a range of investment options, such as
+                    mutual funds, ETFs, and age-based portfolios. The investment
+                    options vary by plan and may be managed by different
+                    financial institutions.
                   </p>
                   <p className="half">
-                    <span style={{ fontWeight: "bold" }}>ESAs:</span>{" "}
-                    Generally offer more flexibility in investment choices, allowing for a broader range of investment options, including stocks, bonds, mutual funds, and other securities. This flexibility allows investors to tailor their investment strategy to their risk tolerance and financial goals.
+                    <span style={{ fontWeight: "bold" }}>ESAs:</span> Generally
+                    offer more flexibility in investment choices, allowing for a
+                    broader range of investment options, including stocks,
+                    bonds, mutual funds, and other securities. This flexibility
+                    allows investors to tailor their investment strategy to
+                    their risk tolerance and financial goals.
                   </p>
                 </div>
               )}
@@ -523,11 +545,19 @@ const MidTermGoals = () => {
               {aveCon && (
                 <div className="halfsies">
                   <p className="half">
-                    <span style={{ fontWeight: "bold" }}>529 Plans:</span> The account owner retains control over the account, including the right to change beneficiaries or withdraw funds for non-education expenses. However, non-qualified withdrawals are subject to income tax and a 10% penalty on the earnings portion.
+                    <span style={{ fontWeight: "bold" }}>529 Plans:</span> The
+                    account owner retains control over the account, including
+                    the right to change beneficiaries or withdraw funds for
+                    non-education expenses. However, non-qualified withdrawals
+                    are subject to income tax and a 10% penalty on the earnings
+                    portion.
                   </p>
                   <p className="half">
-                    <span style={{ fontWeight: "bold" }}>ESAs:</span>{" "}
-                    The account is typically owned and controlled by the custodian, who is responsible for managing the account and making investment decisions on behalf of the beneficiary until they reach the age of majority.
+                    <span style={{ fontWeight: "bold" }}>ESAs:</span> The
+                    account is typically owned and controlled by the custodian,
+                    who is responsible for managing the account and making
+                    investment decisions on behalf of the beneficiary until they
+                    reach the age of majority.
                   </p>
                 </div>
               )}
@@ -535,32 +565,26 @@ const MidTermGoals = () => {
           </ol>
         </div>
       )}
-      {roth && <div></div>}
-      {childIul && <div></div>}
       {weddings && (
-        <ul>
-          <li>
-            <button onClick={childIul2}>Child IUL</button>
-          </li>
+        <div>
+          <button onClick={childIul2}>Child IUL</button>
           <li>Savings Acct</li>
-        </ul>
+        </div>
       )}
       {missions && (
-        <ul>
-          <li>
-            <button onClick={childIul2}>Child IUL</button>
-          </li>
+        <div>
+          <button onClick={childIul2}>Child IUL</button>
           <li>Savings Acct</li>
-        </ul>
+        </div>
       )}
       {longTerm && (
-        <ul>
-          <li>Roth IRA</li>
-          <li>
-            <button onClick={childIul2}>Child IUL</button>
-          </li>
-        </ul>
+        <div>
+          <button onClick={roth2}>Roth IRA</button>
+          <button onClick={childIul2}>Child IUL</button>
+        </div>
       )}
+      {roth && <div></div>}
+      {childIul && <div></div>}
     </div>
   );
 };
