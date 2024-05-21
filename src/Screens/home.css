@@ -1,35 +1,14 @@
 .home {
+  position: relative;
+  top: 100px;
+  margin-bottom: 200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  z-index: 14;
-  background-color: aliceblue;
+  align-items: center;
 }
 
-.topper{
-    position: absolute;
-    top: 0;
-    color: aliceblue;
-    background-color: #303030;
-    width: 100%;
-    margin-top: 0;
-    height: 75px;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-}
-
-input{
-    margin: 20px auto;
-    padding: 5px 10px;
-    font-size: 2em;
-    text-align: center;
-    width: 150px;
-    border-radius: 10px;
-}
+/* .boxed {
+  width: 75%;
+  border: 3px solid black;
+  padding: 10px;
+} */

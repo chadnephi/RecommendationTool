@@ -11,6 +11,7 @@ import Insurances from "./Screens/Insurances";
 import Investments from "./Screens/Investments/Investments";
 import Wealth from "./Screens/W&EP";
 import MidTermGoals from "./Screens/MidTermGoals";
+import AuthScreen from "./Screens/AuthScreen";
 import Home from "./Screens/Home";
 
 function App() {
@@ -26,13 +27,17 @@ function App() {
         <Route
           path="/auth"
           element={
-            <Home
+            <AuthScreen
               token={token}
               setUsersToken={setUsersToken}
               usersToken={usersToken}
               setIsAuthorized={setIsAuthorized}
             />
           }
+        />
+        <Route
+          path="/Home"
+          element={isAuthorized ? <Home /> : <Navigate to="/auth" />}
         />
         <Route
           path="/CashFlow"

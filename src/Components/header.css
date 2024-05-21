@@ -12,13 +12,29 @@ header {
   z-index: 11;
 }
 
+@media (max-width:1400px) {
+  h1 {
+    font-size: x-large;
+  }
+}
+@media (max-width:1000px) {
+  h1 {
+    font-size: larger;
+  }
+}
+@media (max-width:550px) {
+  h1 {
+    font-size: large;
+  }
+}
+
 h1 {
-  padding: 5px 15px;
+  padding: 10px;
   border-radius: 25px;
   margin: 0;
 }
 h1:hover {
   box-shadow: 5px 5px 15px;
-  background-color: #323232;
+  background-color: #3e3e3e;
 }
 
