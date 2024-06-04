@@ -1,34 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
+
 import "./header.css";
 
 const Header = () => {
-
   return (
     <header>
-      <h1>
-        <Link to="/CashFlow">Cash Flow</Link>
-      </h1>
-      <h1>
-        <Link to="/Debt">Debt</Link>
-      </h1>
-      <h1>
-        <Link to="/EmergencyFund">Emergency Fund</Link>
-      </h1>
-      <h1>
-        <Link to="/Insurances">Insurances</Link>
-      </h1>
-      <h1>
-        <Link to="/Investments">Investments</Link>
-      </h1>
-      <h1>
-        <Link to="/Wealth&EstatePreservation">
-          Wealth & Estate Preservation
-        </Link>
-      </h1>
-      <h1>
-        <Link to="/MidTermGoals">Mid Term Goals</Link>
-      </h1>
+      <Link to="/Home">
+        <FaHome className="homebtn" />
+      </Link>
+      <Link to="/CashFlow">
+        <h1>Cash Flow</h1>
+      </Link>
+
+      <Link to="/Debt">
+        <h1>Debt</h1>
+      </Link>
+
+      <Link to="/EmergencyFund">
+        <h1>Emergency Fund</h1>
+      </Link>
+
+      <Link to="/Insurances">
+        <h1>Insurances</h1>
+      </Link>
+
+      <Link to="/Investments">
+        <h1>Investments</h1>
+      </Link>
+
+      <Link to="/Wealth&EstatePreservation">
+        <h1>Wealth & Estate Preservation</h1>
+      </Link>
+
+      <Link to="/MidTermGoals">
+        <h1>Mid Term Goals</h1>
+      </Link>
     </header>
   );
 };

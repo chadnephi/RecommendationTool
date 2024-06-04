@@ -10,19 +10,20 @@ header {
   justify-content: space-evenly;
   padding: 10px;
   z-index: 11;
+  gap: 10px;
 }
 
-@media (max-width:1400px) {
+@media (max-width: 1400px) {
   h1 {
     font-size: x-large;
   }
 }
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   h1 {
     font-size: larger;
   }
 }
-@media (max-width:550px) {
+@media (max-width: 550px) {
   h1 {
     font-size: large;
   }
@@ -34,7 +35,21 @@ h1 {
   margin: 0;
 }
 h1:hover {
-  box-shadow: 5px 5px 15px;
-  background-color: #3e3e3e;
+  box-shadow: 5px 5px 15px #6c6c6c;
+  /* background-color: ; */
+  cursor: pointer;
 }
 
+.homebtn {
+  color: aliceblue;
+  height: 25px;
+  width: auto;
+  padding: 10px;
+  /* border-radius: 25px; */
+  margin: 0;
+}
+.homebtn:hover {
+  /* box-shadow: 5px 5px 15px; */
+  /* background-color: #3e3e3e; */
+  cursor: pointer;
+}

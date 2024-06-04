@@ -140,7 +140,7 @@ const MidTermGoals = () => {
               expenses.
             </p>
           </div>
-          <button onClick={ave2}>528 vs ESA</button>
+          <button onClick={ave2}>529 vs ESA</button>
           <button onClick={roth2}>Roth IRA</button>
           <button onClick={childIul2}>Child IUL</button>
         </div>
