@@ -13,12 +13,13 @@ import Wealth from "./Screens/W&EP";
 import MidTermGoals from "./Screens/MidTermGoals";
 import AuthScreen from "./Screens/AuthScreen";
 import Home from "./Screens/Home";
+import Form1 from "./Screens/Form";
 
 function App() {
   const token = "77IEE";
   const [usersToken, setUsersToken] = useState("");
 
-  const [isAuthorized, setIsAuthorized] = useState(false)
+  const [isAuthorized, setIsAuthorized] = useState(false);
 
   return (
     <div className="App">
@@ -67,9 +68,13 @@ function App() {
           path="/MidTermGoals"
           element={isAuthorized ? <MidTermGoals /> : <Navigate to="/auth" />}
         />
-        <Route path="*" element={<Navigate to='/auth'/>}/>
+        <Route path="*" element={<Navigate to="/auth" />} />
+        <Route path="/form" element={!isAuthorized ? <Form1 /> : <Navigate to="/auth" />} />
       </Routes>
-      <Footer />
+      {isAuthorized && <Footer />}
+      {/* <Routes>
+        <Route path="*" element={<Navigate to="/auth" />} />
+      </Routes> */}
     </div>
   );
 }

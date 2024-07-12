@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./authScreen.css";
+import Footer from "../Components/Footer";
 
 const AuthScreen = (props) => {
   const { token, setUsersToken, usersToken, setIsAuthorized } = props;
@@ -26,6 +27,7 @@ const AuthScreen = (props) => {
       <button type="submit" onClick={checkToken}>
         Access Tool
       </button>
+      <Footer/>
     </div>
   );
 };
