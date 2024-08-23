@@ -25,8 +25,10 @@ const Privacy = () => {
       <h3>2. Information We Collect</h3>
       <h4>a. Personal Information</h4>
       We may collect personal information that you provide directly to us when
-      you use our services. This information may include: Name Email address
-      Phone number Address Any other information you provide directly to us
+      you use our services. This information may include:<li>Name</li>
+      <li>Email address</li>
+      <li>Phone number</li>
+      <li>Any other information you provide directly to us</li>
       <h4>b. Information Collected Through Twilio</h4>
       When you use our services that involve communication through Twilio, we
       may collect and process the following information:
