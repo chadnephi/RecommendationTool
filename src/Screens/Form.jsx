@@ -75,14 +75,14 @@ const Form1 = () => {
           and{" "}
           <span>
             <Link
-              to="https://www.worldfinancialgroup.com/legal/privacy-policy"
+              to={"/privacy-policy"}
               target="_blank"
               style={{ color: "#3770BA", textDecoration: "underline" }}
             >
               Privacy Policy
             </Link>
           </span>{" "}
-          for additional details
+          for additional details.
         </p>
       </form>
     </div>

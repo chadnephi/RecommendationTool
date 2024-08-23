@@ -14,6 +14,7 @@ import MidTermGoals from "./Screens/MidTermGoals";
 import AuthScreen from "./Screens/AuthScreen";
 import Home from "./Screens/Home";
 import Form1 from "./Screens/Form";
+import Privacy from "./Screens/Privacy";
 
 function App() {
   const token = "77IEE";
@@ -70,11 +71,9 @@ function App() {
         />
         <Route path="*" element={<Navigate to="/auth" />} />
         <Route path="/form" element={!isAuthorized ? <Form1 /> : <Navigate to="/auth" />} />
+        <Route path="/privacy-policy" element={!isAuthorized ? <Privacy /> : <Navigate to="/auth" />} />
       </Routes>
       {isAuthorized && <Footer />}
-      {/* <Routes>
-        <Route path="*" element={<Navigate to="/auth" />} />
-      </Routes> */}
     </div>
   );
 }
